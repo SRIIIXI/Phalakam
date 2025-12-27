@@ -1,6 +1,7 @@
 CMakePresets.json
 .vscode/
 .vs/
+*.user
 *.*~
 *.autosave
 *.aux
