@@ -1,0 +1,69 @@
+! --- 1. FONTS & RENDERING ---
+! Using Xft (TrueType) fonts for better readability
+*faceName: Monospace:size=11:antialias=true
+*faceSize: 11
+! This fixes character spacing for many modern fonts
+*forcePackedFont: false
+
+! --- 2. THEME: NORD (Arctic Night) ---
+*background: #2E3440
+*foreground: #D8DEE9
+*cursorColor: #88C0D0
+! Black
+*color0: #3B4252
+*color8: #4C566A
+! Red
+*color1: #BF616A
+*color9: #BF616A
+! Green
+*color2: #A3BE8C
+*color10: #A3BE8C
+! Yellow
+*color3: #EBCB8B
+*color11: #EBCB8B
+! Blue
+*color4: #81A1C1
+*color12: #81A1C1
+! Magenta
+*color5: #B48EAD
+*color13: #B48EAD
+! Cyan
+*color6: #88C0D0
+*color14: #8FBCBB
+! White
+*color7: #E5E9F0
+*color15: #ECEFF4
+
+! --- 3. SCROLLING & CLIPBOARD ---
+*vt100.saveLines: 10000
+*vt100.scrollBar: true
+*vt100.rightScrollBar: true
+*vt100.scrollbar.thickness: 15
+! Sync xterm selection with system clipboard (Ctrl+V)
+*selectToClipboard: true
+
+! --- 4. MODERN INTERACTION ---
+! Enable mouse reporting (allows scroll wheel and mouse clicks in apps like vim)
+*vt100.eventMode: true
+! Allow Ctrl+Shift+C / Ctrl+Shift+V
+*vt100.translations: #override \
+    Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
+    Ctrl Shift <Key>V: insert-selection(CLIPBOARD)
+
+! --- 5. MISC MODERN FIXES ---
+! Better URL and word selection when double-clicking
+*charClass: 33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48
+! Support 256 colors for modern CLI apps
+*termName: xterm-256color
+! Ensure Unicode support is on
+*utf8: 1
+ 
+*directColor: true
+*allowTitleOps: true
+*titleModes: 16
+
+*visualBell: true
+*bellIsUrgent: true
+
+Xcursor.theme: Vanilla-DMZ
+Xcursor.size: 24
