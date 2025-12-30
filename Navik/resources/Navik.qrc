@@ -1,0 +1,25 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="VIEW-UP">images/view-up.png</file>
+        <file alias="EDIT-COPY">images/edit-copy.png</file>
+        <file alias="EDIT-CUT">images/edit-cut.png</file>
+        <file alias="EDIT-MOVETO">images/edit-moveto.png</file>
+        <file alias="EDIT-PASTE">images/edit-paste.png</file>
+        <file alias="EDIT-SELECTALL">images/edit-select-all.png</file>
+        <file alias="EDIT-COPYTO">images/edit-copyto.png</file>
+        <file alias="FILE-EXIT">images/file-exit.png</file>
+        <file alias="FILEMANAGER">images/filemanager.png</file>
+        <file alias="HELP">images/help.png</file>
+        <file alias="TOOL-DISK">images/tool-disk.png</file>
+        <file alias="TOOL-PREFERENCE">images/tool-preferences.png</file>
+        <file alias="TOOL-PROPERTIES">images/tool-properties.png</file>
+        <file alias="TOOL-SEARCH">images/tool-search.png</file>
+        <file alias="TOOL-TERMINAL">images/tool-terminal.png</file>
+        <file alias="VIEW-DETAILED">images/view-detailed.png</file>
+        <file alias="VIEW-HIDDEN">images/view-hidden.png</file>
+        <file alias="VIEW-HOME">images/view-home.png</file>
+        <file alias="VIEW-ICON">images/view-icon.png</file>
+        <file alias="VIEW-THUMBNAIL">images/view-thumbnail.png</file>
+        <file alias="QTLOGO">images/qtlogo.png</file>
+    </qresource>
+</RCC>

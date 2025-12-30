@@ -12,7 +12,7 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
-include_directories(./include)
+include_directories(${CMAKE_SOURCE_DIR}/include)
 
 # Source files
 set(SOURCES
