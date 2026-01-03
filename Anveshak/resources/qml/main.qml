@@ -51,7 +51,7 @@ ApplicationWindow {
                         if (url.indexOf("://") === -1) {
                             if (url.indexOf(".") === -1) {
                                 // Search query
-                                url = "https://duckduckgo.com/?q=" + encodeURIComponent(url)
+                                url = "https://www.google.com/?q=" + encodeURIComponent(url)
                             } else {
                                 // Domain without protocol
                                 url = "https://" + url
@@ -67,7 +67,7 @@ ApplicationWindow {
                         if (webView.loading) {
                             webView.stop()
                         } else {
-                            webView.url = "https://duckduckgo.com"
+                            webView.url = "https://www.google.com"
                         }
                     }
                 }
@@ -87,7 +87,7 @@ ApplicationWindow {
             id: webView
             Layout.fillWidth: true
             Layout.fillHeight: true
-            url: "https://duckduckgo.com"
+            url: "https://www.google.com"
             
             onLoadingChanged: function(loadRequest) {
                 if (loadRequest.status === WebEngineView.LoadSucceededStatus) {

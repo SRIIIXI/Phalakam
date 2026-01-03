@@ -33,14 +33,14 @@ set(RESOURCES
 )
 
 # Create executable
-add_executable(${PROJECT_NAME}
+add_executable(${PROJECT_NAME}.bin
     ${SOURCES}
     ${HEADERS}
     ${RESOURCES}
 )
 
 # Link Qt libraries
-target_link_libraries(${PROJECT_NAME}
+target_link_libraries(${PROJECT_NAME}.bin
     Qt6::Core
     Qt6::Widgets
 )

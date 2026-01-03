@@ -18,9 +18,9 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 
 # Qt policy for QML module URI
-if(POLICY CMP0071)
-    cmake_policy(SET CMP0071 NEW)
-endif()
+#if(POLICY CMP0071)
+#    cmake_policy(SET CMP0071 NEW)
+#endif()
 
 # Source files
 set(SOURCES
@@ -29,7 +29,7 @@ set(SOURCES
 
 set(RESOURCE_FILE ./resources/Anveshak.qrc)
 
-qt_add_executable(${PROJECT_NAME}
+qt_add_executable(${PROJECT_NAME}.bin
     ${SOURCES} ${RESOURCE_FILE}
 )
 
@@ -41,7 +41,7 @@ qt_add_qml_module(${PROJECT_NAME}
 )
 
 # Link Qt6 libraries
-target_link_libraries(${PROJECT_NAME} PRIVATE
+target_link_libraries(${PROJECT_NAME}.bin PRIVATE
     Qt6::Core
     Qt6::Gui
     Qt6::Quick
