@@ -14,7 +14,7 @@ ApplicationWindow
     property int iconwidth: 40
 
     title: "Lekhak Editor"
-    Material.theme: Material.Light
+    Material.theme: Material.Dark
 
     Row
     {
@@ -33,7 +33,7 @@ ApplicationWindow
             width: window.width * 0.25
             height: window.height
 
-            Material.theme: Material.Light;
+            Material.theme: Material.Dark;
 
             Column
             {
